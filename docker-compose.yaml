@@ -1,14 +1,15 @@
 version: "3.9"
 
 services:
-  pycrypto:
+  algousd:
       build:
         context: .
-      container_name: pycrypto
+      container_name: algousd
       volumes:
-        - ./market/template/config.json:/app/config.json
-        - ./market/template/pycryptobot.log:/app/pycryptobot.log
-        - ./market/template/graphs:/app/graphs
+        - ./market/algousd/coinbase.key:/app/coinbase.key
+        - ./market/algousd/config.json:/app/config.json
+        - ./market/algousd/pycryptobot.log:/app/pycryptobot.log
+        - ./market/algousd/graphs:/app/graphs
         - /etc/localtime:/etc/localtime:ro
       environment:
         - PYTHONUNBUFFERED=1
