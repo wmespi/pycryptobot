@@ -1,0 +1,14 @@
+{
+    "coinbasepro": {
+        "api_url": "https://api.pro.coinbase.com",
+        "config": {
+            "base_currency": "ALGO",
+            "quote_currency": "USD",
+            "live": 0,
+            "smartswitch": 1,
+            "verbose": 1,
+            "sim": "fast"
+        },
+        "api_key_file": "coinbase.key"
+    }
+}
