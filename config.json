@@ -8,7 +8,9 @@
             "smartswitch": 1,
             "verbose": 1,
             "statdetail": 1,
-            "sim": "fast"
+            "sim": "fast",
+            "enableinsufficientfundslogging": 1,
+            "logbuysellinjson": 1
         },
         "api_key_file": "coinbase.key"
     }
